@@ -91,7 +91,8 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.btnAccept_Click);
             this.Name = "FrmLogin";
-            this.Text = "Form1";
+            this.Text = "Iniciar Sesion";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

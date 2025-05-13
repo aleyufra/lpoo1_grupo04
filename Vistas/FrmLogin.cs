@@ -46,13 +46,24 @@ namespace Vistas
             if (bUserFound)
             {
                 MessageBox.Show("Bienvenido/a: " + textBoxUserName.Text);
+
+                FrmMain frmMain = new FrmMain();
+                frmMain.Show();
+                this.Hide();
             }
             else {
                 MessageBox.Show("Datos de Ingreso Incorrectos");
+                textBoxUserName.Text = "";
+                textBoxUserPassword.Text = "";
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e){
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }
